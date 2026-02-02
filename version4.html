@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form action="#" method="post">
+
+  <!-- BASIC INFO -->
+    <h1><b>Basic Info</b></h1>
+
+    <table cellpadding="6" cellspacing="0">
+      <tr>
+        <td><label><b>Employee ID</b></label></td>
+        <td>9</td>
+      </tr>
+
+      <tr>
+        <td><label><b>Last Name</b></label></td>
+        <td>Dodsworth</td>
+      </tr>
+
+      <tr>
+        <td><label for="fname"><b>First Name</b></label></td>
+        <td><input type="text" id="fname" name="fname" value="Anne" size="40" required></td>
+      </tr>
+
+      <tr>
+        <td valign="top"><label><b>Gender</b></label></td>
+        <td>
+          <label><input type="radio" name="gender" value="Male"> Male</label><br>
+          <label><input type="radio" name="gender" value="Female"> Female</label><br>
+          <label><input type="radio" name="gender" value="XXX"> XXX</label><br>
+          <label><input type="radio" name="gender" value="ZZZ" checked> ZZZ</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="title"><b>Title</b></label></td>
+        <td><input type="text" id="title" name="title" value="Sales Representative" size="40"></td>
+      </tr>
+
+      <tr>
+        <td><label for="suffix"><b>Suffix</b></label></td>
+        <td><input type="text" id="suffix" name="suffix" value="Ms." size="40"></td>
+      </tr>
+
+      <tr>
+        <td><label for="birth"><b>BirthDate</b></label></td>
+        <td><input type="text" id="birth" name="birth" value="1969-07-02 00:00:00" size="40"></td>
+      </tr>
+
+      <tr>
+        <td><label for="hire"><b>HireDate</b></label></td>
+        <td><input type="text" id="hire" name="hire" value="1994-11-15 00:00:00" size="40"></td>
+      </tr>
+
+      <tr>
+        <td><label for="ssn"><b>SSN # (if applicable)</b></label></td>
+        <td><input type="text" id="ssn" name="ssn" size="40"></td>
+      </tr>
+
+      <tr>
+        <td><label for="report"><b>Reports To</b></label></td>
+        <td>
+          <select id="report" name="report">
+            <option>Buchanan</option>
+            <option>Duong</option>
+            <option>Nhat</option>
+            <option>Anh</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+
+  <br>
+
+  <!-- CONTACT INFO -->
+    <h1><b>Contact Info</b></h1>
+
+    <table cellpadding="6" cellspacing="0">
+      <tr>
+        <td><label for="email"><b>Email</b></label></td>
+        <td><input type="email" id="email" name="email" placeholder="name@example.com" size="40"></td>
+      </tr>
+
+      <tr>
+        <td><label for="address"><b>Address</b></label></td>
+        <td><input type="text" id="address" name="address" value="7 Houndstooth Rd." size="40"></td>
+      </tr>
+
+      <tr>
+        <td><label for="city"><b>City</b></label></td>
+        <td><input type="text" id="city" name="city" value="London" size="40"></td>
+      </tr>
+
+      <tr>
+        <td><label for="region"><b>Region</b></label></td>
+        <td><input type="text" id="region" name="region" size="40"></td>
+      </tr>
+
+      <tr>
+        <td><label for="postal"><b>Postal Code</b></label></td>
+        <td><input type="text" id="postal" name="postal" value="WG2 7LT" size="40"></td>
+      </tr>
+
+      <tr>
+        <td><label for="country"><b>Country</b></label></td>
+        <td>
+          <select id="country" name="country">
+            <option>Russian Federation</option>
+            <option>Viet Nam</option>
+            <option>Korea</option>
+            <option>Thailand</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="phone"><b>US Home Phone</b></label></td>
+        <td><input type="tel" id="phone" name="phone" value="(234)234-2342" size="40"></td>
+      </tr>
+
+      <tr>
+        <td><label for="photo"><b>Photo</b></label></td>
+        <td><input type="text" id="photo" name="photo" value="EmpID9.bmp" size="40"></td>
+      </tr>
+    </table>
+
+  <br>
+
+  <!-- OPTIONAL INFO -->
+    <h1><b>Optional Info</b></h1>
+
+    <table cellpadding="6" cellspacing="0">
+      <tr>
+        <td valign="top"><label for="notes"><b>Notes</b></label></td>
+        <td>
+          <textarea id="notes" name="notes" rows="6" cols="45">Anne has a BA degree in English from St. Lawrence College.
+She is fluent in French and German.ZZZ</textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td valign="top"><b>Preferred Shift</b></td>
+        <td>
+          <label><input type="checkbox" name="shift1" value="Regular"> Regular</label><br>
+          <label><input type="checkbox" name="shift2" value="Gravy Yard" checked> Gravy Yard</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td><b>Active?</b></td>
+        <td><input type="checkbox" name="active" checked></td>
+      </tr>
+
+      <tr>
+        <td><b>Are you human?</b></td>
+        <td>
+          <b>TIDAWO</b> &nbsp; <small>Click to change</small><br><br>
+          <input type="text" name="captcha" size="40" required>
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+
+  <br>
+
+  <small><b>* required</b></small>
+
+  <br><br>
+
+  <!-- BUTTON -->
+  <button type="submit">Submit</button>
+  <button type="reset">Cancel</button>
+
+</form>
+  
+</body>
+</html>
