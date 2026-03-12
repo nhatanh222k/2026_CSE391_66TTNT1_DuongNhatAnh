@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Form Đặt Hàng</title>
+
+<style>
+
+body{
+  font-family: Arial;
+}
+
+form{
+  width:420px;
+}
+
+input,select,textarea{
+  width:100%;
+  padding:6px;
+  margin-top:4px;
+}
+
+textarea{
+  height:80px;
+}
+
+.error{
+  color:red;
+  font-size:13px;
+}
+
+.counter{
+  font-size:12px;
+  text-align:right;
+}
+
+.total{
+  margin-top:10px;
+  font-weight:bold;
+}
+
+#confirmBox{
+  border:1px solid gray;
+  padding:15px;
+  margin-top:20px;
+  display:none;
+}
+
+.success{
+  color:green;
+  font-size:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Đặt Hàng</h2>
+
+<form id="orderForm">
+
+<label>Sản phẩm</label>
+<select id="product">
+<option value="">-- Chọn sản phẩm --</option>
+<option value="Áo">Áo</option>
+<option value="Quần">Quần</option>
+<option value="Giày">Giày</option>
+</select>
+<div id="productError" class="error"></div>
+
+<label>Số lượng</label>
+<input type="number" id="quantity">
+<div id="quantityError" class="error"></div>
+
+<label>Ngày giao hàng</label>
+<input type="date" id="delivery">
+<div id="deliveryError" class="error"></div>
+
+<label>Địa chỉ giao</label>
+<input id="address">
+<div id="addressError" class="error"></div>
+
+<label>Ghi chú</label>
+<textarea id="note"></textarea>
+<div class="counter" id="noteCount">0/200</div>
+<div id="noteError" class="error"></div>
+
+<p>Thanh toán</p>
+
+<label><input type="radio" name="payment" value="COD"> COD</label>
+<label><input type="radio" name="payment" value="Bank"> Chuyển khoản</label>
+<label><input type="radio" name="payment" value="Wallet"> Ví điện tử</label>
+
+<div id="paymentError" class="error"></div>
+
+<div class="total">
+Tổng tiền: <span id="totalPrice">0</span> VND
+</div>
+
+<br>
+
+<button type="submit">Đặt hàng</button>
+
+</form>
+
+
+<div id="confirmBox">
+
+<h3>Xác nhận đơn hàng</h3>
+
+<p id="summary"></p>
+
+<button id="confirmBtn">Xác nhận</button>
+<button id="cancelBtn">Hủy</button>
+
+</div>
+
+<div id="successMsg" class="success"></div>
+
+<script src="bai2-2.js"></script>
+
+</body>
+</html>
